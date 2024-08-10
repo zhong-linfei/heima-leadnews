@@ -25,6 +25,9 @@ public class ApArticle implements Serializable {
     private Long id;
 
 
+
+
+
     /**
      * 标题
      */

@@ -23,6 +23,14 @@ public class ApArticleConfig implements Serializable {
     @TableId(value = "id",type = IdType.ID_WORKER)
     private Long id;
 
+    public ApArticleConfig(Long articleId){
+        this.articleId = articleId;
+        this.isDelete = false;
+        this.isDown = false;
+        this.isForward = true;
+        this.isComment = true;
+    }
+
     /**
      * 文章id
      */
